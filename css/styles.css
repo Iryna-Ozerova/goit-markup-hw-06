@@ -375,6 +375,7 @@ button {
 /*#region hero*/
 
 .section-hero {
+  max-width: 320px;
   margin: 0 auto;
   padding-top: 72px;
   padding-bottom: 72px;
@@ -401,6 +402,7 @@ button {
 
 @media (min-width: 768px) {
   .section-hero {
+    max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(
@@ -521,6 +523,10 @@ button {
   color: #2e2f42;
 }
 
+.item-list-team {
+  width: 100%;
+}
+
 .text-benefits {
   font-weight: 500;
 }
@@ -584,6 +590,11 @@ button {
   background-color: #f4f4fd;
 }
 
+.container-team {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -626,6 +637,10 @@ button {
   margin-bottom: 72px;
 }
 
+.item-list-team:last-child {
+  margin-bottom: 0;
+}
+
 .link-socials {
   width: 40px;
   height: 40px;
@@ -648,7 +663,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .section-team {
+  .container-team {
     padding-left: 108px;
     padding-right: 108px;
   }
@@ -666,6 +681,11 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .container-team {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .list-team {
     flex-wrap: nowrap;
     gap: 24px;
@@ -677,12 +697,15 @@ button {
 /*#region our-portfolio*/
 
 .item-list-prtfl {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  max-width: 288px;
+  margin-bottom: 48px;
 
-.item-list-prtfl:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.item-list-prtfl:last-child {
+  margin-bottom: 0;
 }
 
 .portfolio-content {
@@ -691,7 +714,6 @@ button {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   overflow: hidden;
-  text-align: left;
 }
 
 .thumb {
@@ -716,6 +738,40 @@ button {
 }
 
 .item-list-prtfl:focus .overlay-text {
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .item-list-prtfl {
+    max-width: 356px;
+    margin-bottom: 0px;
+  }
+
+  .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .item-list-portfl {
+    margin-bottom: 0;
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .item-list-prtfl {
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .item-list-prtfl:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+}
+
+.item-list-prtfl:hover .overlay-text {
   transform: translateY(0);
 }
 
