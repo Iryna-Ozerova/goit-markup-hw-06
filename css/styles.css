@@ -817,14 +817,13 @@ button {
   text-align: center;
 }
 
-footer .list-team-socials {
-  gap: 16px;
-  margin-top: 16px;
-}
-
-footer .link-socials:hover,
+.footer-socials .link-socials:hover,
 footer .link-socials:focus {
   background-color: #31d0aa;
+}
+
+.footer-socials .list-team-socials {
+  justify-content: start;
 }
 
 .text-subscribe {
@@ -898,6 +897,55 @@ footer .link-socials:focus {
 
 .subscribe-icon {
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-left: 108px;
+    padding-right: 108px;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .text-footer {
+    width: 264px;
+  }
+
+  .paragraph-cont {
+    text-align: left;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .text-footer.social {
+    text-align: left;
+  }
+
+  .wrap-subscribe {
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+    row-gap: 0px;
+    column-gap: 0px;
+  }
+
+  .footer-socials {
+    margin-left: 120px;
+  }
+
+  .wrap-subscribe {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }
 
 /*#endregion footer*/
