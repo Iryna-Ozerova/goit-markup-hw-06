@@ -35,7 +35,7 @@
                     </li>
                 </ul>
                </address>
-            <button class="btn-burger" type="button">
+            <button class="btn-burger" type="button" data-menu-open>
                 <svg class="burger-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
@@ -43,9 +43,9 @@
             </div>
         </header>
                   <!---====mobile-menu=======-->
-                    <div class="mobile-menu">
+                    <div class="mobile-menu" data-menu>
                         <div class="container mobile-menu-container">
-                            <button class="mobile-menu-close">
+                            <button class="mobile-menu-close" data-menu-close>
                                 <svg class="mobile-menu-icon" width="8" height="8">
                                     <use href="./images/icons.svg#icon-close"></use>
                                 </svg>
@@ -182,7 +182,7 @@
                         <li class="item-list-team">
                             <img srcset="./images/mark-mob.jpg  1x,
                                     ./images/mark-mob@2x.jpg 2x"
-                            src="./images/mark-mob.jpg" alt="man with a beard" width="264" height="260" />
+                            src="./images/mark-mob.jpg" alt="man with a beard" width="264" height="260" >
 
                             <div class="text-team-content">
                                 <h3 class="list-title">Mark Guerrero</h3>
@@ -221,15 +221,9 @@
                             </div>
                         </li>
                         <li class="item-list-team">
-                        <picture>
-                            <source srcset="./images/tom-desk.jpg  1x,
-                                    ./images/tom-desk@2x.jpg 2x" media="(min-width: 1158px)" />
-                            <source srcset="./images/tom-tab.jpg  1x,
-                                    ./images/tom-tab@2x.jpg 2x" media="(min-width: 768px)" />
-                            <source srcset="./images/tom-mob.jpg  1x,
-                                    ./images/tom-mob@2x.jpg 2x" media="(max-width: 767px)" />
-                            <img src="./images/tom-mob.jpg" alt="man with a smile" width="264" height="260"/>
-                        </picture>
+                            <img srcset="./images/tom-mob.jpg  1x,
+                                    ./images/tom-mob@2x.jpg 2x"
+                             src="./images/tom-mob.jpg" alt="man with a smile" width="264" height="260">
                             <div class="text-team-content">
                                 <h3 class="list-title">Tom Ford</h3>
                                 <p class="text-team">Frontend Developer</p>
@@ -267,17 +261,9 @@
                             </div>
                         </li>
                         <li class="item-list-team">
-                            <picture>
-                                <source srcset="./images/camila-desk.jpg 1x,
-                                ./images/camila-desk@2x.jpg 2x"
-                                media="(min-width: 1158px)">
-                                <source srcset="./images/camila-tab.jpg 1x,
-                                ./images/camila-tab@2x.jpg 2x" 
-                                media="(min-width: 768px)">
-                                <source srcset="./images/camila-mob.jpg 1x,
-                                ./images/camila-mob@2x.jpg 2x" media="(max-width: 767px)">
-                                <img src="./images/camila-mob.jpg" alt="young lady" width="264" height="260">
-                            </picture>
+                                <img srcset="./images/camila-mob.jpg 1x,
+                                ./images/camila-mob@2x.jpg 2x"
+                                 src="./images/camila-mob.jpg" alt="young lady" width="264" height="260">
                             <div class="text-team-content">
                                 <h3 class="list-title">Camila Garcia</h3>
                                 <p class="text-team">Marketing</p>
@@ -315,18 +301,9 @@
                             </div>
                         </li>
                         <li class="item-list-team">
-                            <picture>
-                                <source srcset="./images/daniel-desk.jpg 1x,
-                                ./images/daniel-desk@2x.jpg 2x" media="(min-width: 1158px)"
-                                >
-                                <source srcset="./images/daniel-tab.jpg 1x,
-                                ./images/daniel-tab@2x.jpg 2x" media="(min-width:768px)"
-                                >
-                                <source srcset="./images/daniel-mob.jpg 1x,
-                                ./images/daniel-mob@2x.jpg 2x" media="(max-width: 767px)"
-                                >
-                                <img src="./images/daniel-mob.jpg" alt="young man" width="264" height="260">
-                            </picture>
+                                <img srcset="./images/daniel-mob.jpg 1x,
+                                ./images/daniel-mob@2x.jpg 2x"
+                                src="./images/daniel-mob.jpg" alt="young man" width="264" height="260">
                             <div class="text-team-content">
                                 <h3 class="list-title">Daniel Wilson</h3>
                                 <p class="text-team">UI Designer</p>
@@ -628,7 +605,7 @@
             </div>
         </div>
 <script src="./js/modal.js"></script>
-</body>
-    
+<script src="./js/menu.js"></script>
+   
 </body>
 </html>
