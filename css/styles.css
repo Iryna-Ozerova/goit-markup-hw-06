@@ -103,6 +103,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .nav-list,
